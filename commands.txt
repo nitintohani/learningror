@@ -1,0 +1,5 @@
+Install rails => gem install rails
+Create new application => rails new "NameOfApplication" -d mysql
+Add routing to the file  config/routes.rb => get "nameofcontroller/nameofaction"
+Remove stylesheet and javascript tag from application.html.erb inside views/layout/
+Create new controller => rails generate controller nameofcontroller nameofview (name of view is optional)
