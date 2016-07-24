@@ -1,2 +1,13 @@
 <h1>Contact#help</h1>
 <p>Find me in app/views/contact/help.html.erb</p>
+
+
+<p>
+	We have following contact numbers :-
+
+	<% @numbers.each do |num| %>	
+	<br>
+	<%= num %>
+	<% end %>	
+
+</p>
