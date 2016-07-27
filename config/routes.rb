@@ -63,4 +63,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get ':controller(/:action(/:id(/.:format)))' => "foo#matcher"
+  post ':controller(/:action(/:id(/.:format)))' => "foo#matcher"
 end

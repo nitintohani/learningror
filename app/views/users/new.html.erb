@@ -1,2 +1,12 @@
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
+<% if @msg %>
+	<p>
+		<%= @msg %>
+	</p>
+<% end %>
+<form action="/users/create" method="post">
+	<input type="text" name="email" id="email">
+	<input type="password" name="password" id="password">
+	<input type="submit" value="Save User"/>
+</form>
