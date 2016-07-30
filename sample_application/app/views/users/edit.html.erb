@@ -1,0 +1,9 @@
+<h1>Users#edit</h1>
+<p>Find me in app/views/users/edit.html.erb</p>
+<form action="/users/update" method="post">
+	<input type="hidden" name="id" id="id" value="<%= @user.id %>">
+	Email :- <input type="email" name="email" id="email"> <br>
+	Username :- <input type="text" name="username" id="username"> <br>
+	Age :- <input type="number" name="age" id="age"> <br>
+	<input type="submit" value="Save User">
+</form>

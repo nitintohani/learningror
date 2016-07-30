@@ -1,0 +1,46 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+<style>
+	table
+	{
+		width:400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	tr:nth-child(odd)
+	{
+		background:#e5e5e5;
+		color:#444;
+	}
+	tr:nth-child(even)
+	{
+		background:#444;
+		color:#e5e5e5;
+	}
+	td
+	{
+		padding:10px;
+	}
+</style>
+<table>
+<tr>
+	<td>ID</td>
+	<td>Email</td>
+	<td>Username</td>
+	<td>Age</td>
+</tr>
+<tr>
+	<td>
+		<%= @user.id  %>
+	</td>
+	<td>
+		<%= @user.email  %>
+	</td>
+	<td>
+		<%= @user.username  %>
+	</td>
+	<td>
+		<%= @user.age  %>
+	</td>
+</tr>
+</table>
