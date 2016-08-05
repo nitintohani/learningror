@@ -34,6 +34,30 @@ class UsersController < ApplicationController
   	end
   end
 
+def update
+  @id = params[:id]
+  @user = User.find(@id)
+  if @user.update_attributes(user_params)
+    @msg = "User updated successfully"
+    @users = User.all
+    render "list"
+  else
+    @errors = @user.errors.full_messages
+    render "edit"
+  end
+end
+
+
+  def edit
+    @id = params[:id]
+    @user = User.find(@id)
+  end
+
+
+  def list
+    @users = User.all
+  end
+
   def show
   	@users = User.all
   end

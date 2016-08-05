@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :abouts
   resources :contacts
+  resources :users
   get 'users/new'
 
   get 'users/index'

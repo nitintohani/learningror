@@ -1,0 +1,17 @@
+<% if @msg %>
+	<p>
+		<%= @msg %>
+	</p>
+<% end %>
+
+
+<p>
+	<% if @users && @users.size > 0 %>
+		<% @users.each do |u| %>
+			<%= u.email %> 
+			<%= link_to("Edit",{:controller=>"users",:action=>"edit",:id=>u.id}
+			) %> 
+			<br>
+		<% end %>
+	<% end %>
+</p>
